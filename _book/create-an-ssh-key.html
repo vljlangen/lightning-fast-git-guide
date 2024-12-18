@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>8 Create an SSH key | Lightning Fast Git Guide</title>
+  <meta name="description" content="8 Create an SSH key | Lightning Fast Git Guide" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="8 Create an SSH key | Lightning Fast Git Guide" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="8 Create an SSH key | Lightning Fast Git Guide" />
+  
+  
+  
+
+<meta name="author" content="Ville Langén" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="navigating-gitlab.html"/>
+<link rel="next" href="ssh-key-to-gitlab.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="what-is-git.html"><a href="what-is-git.html"><i class="fa fa-check"></i><b>2</b> What is Git?</a></li>
+<li class="chapter" data-level="3" data-path="how-to-start.html"><a href="how-to-start.html"><i class="fa fa-check"></i><b>3</b> How to start?</a></li>
+<li class="chapter" data-level="4" data-path="installing-git.html"><a href="installing-git.html"><i class="fa fa-check"></i><b>4</b> Installing Git</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="installing-git.html"><a href="installing-git.html#on-mac"><i class="fa fa-check"></i><b>4.1</b> On Mac</a></li>
+<li class="chapter" data-level="4.2" data-path="installing-git.html"><a href="installing-git.html#on-windows"><i class="fa fa-check"></i><b>4.2</b> On Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="tell-git-your-credentials.html"><a href="tell-git-your-credentials.html"><i class="fa fa-check"></i><b>5</b> Tell Git your credentials</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="tell-git-your-credentials.html"><a href="tell-git-your-credentials.html#on-mac-1"><i class="fa fa-check"></i><b>5.1</b> On Mac</a></li>
+<li class="chapter" data-level="5.2" data-path="tell-git-your-credentials.html"><a href="tell-git-your-credentials.html#on-windows-1"><i class="fa fa-check"></i><b>5.2</b> On Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="log-in-to-gitlab.html"><a href="log-in-to-gitlab.html"><i class="fa fa-check"></i><b>6</b> Log in to GitLab</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="log-in-to-gitlab.html"><a href="log-in-to-gitlab.html#utu-users"><i class="fa fa-check"></i><b>6.1</b> UTU users</a></li>
+<li class="chapter" data-level="6.2" data-path="log-in-to-gitlab.html"><a href="log-in-to-gitlab.html#non-utu-users"><i class="fa fa-check"></i><b>6.2</b> Non-UTU users</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="navigating-gitlab.html"><a href="navigating-gitlab.html"><i class="fa fa-check"></i><b>7</b> Navigating GitLab</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="navigating-gitlab.html"><a href="navigating-gitlab.html#dashboard"><i class="fa fa-check"></i><b>7.1</b> Dashboard</a></li>
+<li class="chapter" data-level="7.2" data-path="navigating-gitlab.html"><a href="navigating-gitlab.html#ssh-key-setting"><i class="fa fa-check"></i><b>7.2</b> SSH key setting</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="create-an-ssh-key.html"><a href="create-an-ssh-key.html"><i class="fa fa-check"></i><b>8</b> Create an SSH key</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="create-an-ssh-key.html"><a href="create-an-ssh-key.html#mac_section"><i class="fa fa-check"></i><b>8.1</b> On Mac</a></li>
+<li class="chapter" data-level="8.2" data-path="create-an-ssh-key.html"><a href="create-an-ssh-key.html#on-windows-2"><i class="fa fa-check"></i><b>8.2</b> On Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="ssh-key-to-gitlab.html"><a href="ssh-key-to-gitlab.html"><i class="fa fa-check"></i><b>9</b> SSH key to GitLab</a></li>
+<li class="chapter" data-level="10" data-path="existing_repository.html"><a href="existing_repository.html"><i class="fa fa-check"></i><b>10</b> Cloning a repository</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="existing_repository.html"><a href="existing_repository.html#definition"><i class="fa fa-check"></i><b>10.1</b> Definition</a></li>
+<li class="chapter" data-level="10.2" data-path="existing_repository.html"><a href="existing_repository.html#existing-repository"><i class="fa fa-check"></i><b>10.2</b> Existing repository</a></li>
+<li class="chapter" data-level="10.3" data-path="existing_repository.html"><a href="existing_repository.html#clone-to-rstudio"><i class="fa fa-check"></i><b>10.3</b> Clone to RStudio</a></li>
+<li class="chapter" data-level="10.4" data-path="existing_repository.html"><a href="existing_repository.html#new-repository"><i class="fa fa-check"></i><b>10.4</b> New repository</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pushing-to-gitlab.html"><a href="pushing-to-gitlab.html"><i class="fa fa-check"></i><b>11</b> Pushing to GitLab</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="pushing-to-gitlab.html"><a href="pushing-to-gitlab.html#definition-1"><i class="fa fa-check"></i><b>11.1</b> Definition</a></li>
+<li class="chapter" data-level="11.2" data-path="pushing-to-gitlab.html"><a href="pushing-to-gitlab.html#pushing-with-rstudio"><i class="fa fa-check"></i><b>11.2</b> Pushing with RStudio</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="pulling-from-gitlab.html"><a href="pulling-from-gitlab.html"><i class="fa fa-check"></i><b>12</b> Pulling from GitLab</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="pulling-from-gitlab.html"><a href="pulling-from-gitlab.html#definition-2"><i class="fa fa-check"></i><b>12.1</b> Definition</a></li>
+<li class="chapter" data-level="12.2" data-path="pulling-from-gitlab.html"><a href="pulling-from-gitlab.html#pulling-with-rstudio"><i class="fa fa-check"></i><b>12.2</b> Pulling with RStudio</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="epilogue.html"><a href="epilogue.html"><i class="fa fa-check"></i><b>13</b> Epilogue</a></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Lightning Fast Git Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="create-an-ssh-key" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">8</span> Create an SSH key<a href="create-an-ssh-key.html#create-an-ssh-key" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="mac_section" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> On Mac<a href="create-an-ssh-key.html#mac_section" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Open up the Terminal again. You can click on its icon on the dock (the “ribbon” that is in the bottom of your screen), or hold down <code>Command</code> and simultaneously press <code>Tab</code> until the Terminal is highlighted. You’re suddenly back in Terminal.</p>
+<p>Now, type the following command:</p>
+<pre><code>ssh-keygen</code></pre>
+<p>The Terminal will read something like this:</p>
+<pre><code>Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/YOU CAN SEE YOUR COMPUTER USER NAME HERE/.ssh/id_rsa):</code></pre>
+<p>It suggests you that file name and file location, and you can confirm that.</p>
+<p>Next, it will ask whether you want to set a password - in this example, the data traffic will be between you and the code repository of University of Turku, and as such, I would not set any password here:</p>
+<pre><code>Enter passphrase (empty for no passphrase):</code></pre>
+<p>After that, the Terminal will display where the SSH key has been saved:</p>
+<p><br></p>
+<p><img src="images/ssh_key_location-01.png" /></p>
+<p><br> <br></p>
+<p>Now you can type in <code>cat /Users/YOUR COMPUTER USER NAME HERE/.ssh/id_rsa.pub</code></p>
+<p>and press enter. You will see your whole SSH key displayed in the Terminal window. Select it with your mouse and press <code>Command</code> + <code>C</code> - this will copy the SSH key to your computer’s clipboard.</p>
+<p>Pay attention to select the whole key, starting already from the words <code>ssh-rsa</code> all the way to the end, including even your computer type (in this example: <code>-MBP</code>).</p>
+<p>In other words, select the whole block that you can see surrounded by the blue box here below:</p>
+<p><br></p>
+<p><img src="images/ssh_key_copy-01.jpg" /></p>
+<p><br>
+<br></p>
+</div>
+<div id="on-windows-2" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> On Windows<a href="create-an-ssh-key.html#on-windows-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The process is very similar to what you saw <a href="create-an-ssh-key.html#mac_section">above on the Mac section</a>. Just use the Git Bash for these commands.</p>
+<p>Your relevant code might look something like this:</p>
+<pre><code>cat /c/Users/YOUR COMPUTER USER NAME HERE/.ssh/id_rsa.pub</code></pre>
+<p>Adjust the code to your needs. If you can’t get it work, there are good tutorials for getting Git to run and creating the SSH key on YouTube. You may e.g. type in the YouTube search field:</p>
+<p><code>Setup Git and SSH for GitLab on Windows</code></p>
+<p>and you’ll find good tutorials and get these things to work, eventually.</p>
+<p><br>
+<br></p>
+<p>In the next chapter, we will paste your SSH key to GitLab’s respective SSH key field.</p>
+<p><br> <br> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="navigating-gitlab.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ssh-key-to-gitlab.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

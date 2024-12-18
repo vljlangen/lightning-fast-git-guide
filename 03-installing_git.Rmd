@@ -1,0 +1,25 @@
+
+# Installing Git
+
+## On Mac
+
+You don't have to install anything. Move on to next chapter.
+
+## On Windows
+
+Go to the following webpage and download Git for Windows:
+
+https://git-scm.com/
+
+If and when you are new to Git, I suggest that you run the installer with default settings, i.e. don't change any of the click buttons of the installer.
+
+The installer installs, among other things:
+
+1. Git
+2. Git Bash - a command prompt that resembles a UNIX shell
+
+In the next chapter, we will tell Git your name and email address.
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

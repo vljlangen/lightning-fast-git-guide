@@ -1,0 +1,17 @@
+
+# How to start?
+
+In order to use Git, you have to do the following things:
+
+1. **Have Git on your computer.** If you have a Mac, you already have it. But it is easy to install it to Windows, too.
+2. **Tell Git your name and your email address.**
+3. **Obtain the SSH URL** (think of it like the address) **of your remote repository**, which can be in e.g. GitLab or GitHub. In this example, I will show the workflow for GitLab for UTU, which is a code repository for University of Turku.
+4. **Create an SSH key.** This key enables you to transfer push and pull content between the remote repository and your computer.
+5. **Tell your SSH key to the remote repository** (here: GitLab for UTU).
+
+That's all there is to it. Let's get started.
+
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

@@ -1,0 +1,22 @@
+
+# Log in to GitLab
+
+## UTU users
+
+Go to the following webpage:
+
+https://gitlab.utu.fi/users/sign_in
+
+Type in your UTU user name and password, and boom, you're in GitLab for UTU - the code repository for University of Turku.
+
+## Non-UTU users
+
+If you are not a UTU user, you can still follow this guide, but you will have to have a user account at the "general" GitLab. You can sign up for free at the following webpage under the ```Get free trial``` button (as of writing this guide, there is no need to add credit card details):
+
+https://about.gitlab.com/
+
+In the next chapter, we will navigate the GitLab and find the field where you have to paste your SSH key.
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

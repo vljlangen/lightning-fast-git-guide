@@ -1,0 +1,35 @@
+---
+title: "Lightning Fast Git Guide"
+documentclass: book
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        scroll_highlight: yes
+        after: |
+          <li><a href="https://bookdown.org/">Proudly published with bookdown</a></li>
+author: Ville Langén
+date: "`r format(Sys.time(), '%d.%m.%Y')`"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+
+```
+
+<br>
+<br>
+<br>
+
+# Introduction
+
+In this guide, you will learn how to start using Git. The setup takes about 5 minutes.
+
+In the next chapter, I will tell what Git is. If you've had enough of chit-chat already, you may skip that chapter.
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

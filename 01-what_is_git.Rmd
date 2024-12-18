@@ -1,0 +1,18 @@
+
+# What is Git?
+
+Git is a version control system - think of it like a time machine of your project. If something goes wrong with your current version, you can go back in time to a previous version that worked.
+
+Git is especially useful when you are collaborating with other co-writers. You don't have to ping-pong your documents via e-mail.
+
+Cloud services like Dropbox are awesome, but with Git, you get a more powerful version controlling feature (i.e., the "time machine").
+
+You can build a whole research compendum and push it with Git to a repository. A research compendum is basically like a collection of folders consisting of all intellectual content of your research project, e.g. codes for the statistical analyses, manuscripts, figures and so forth.
+
+By the way, you might be asking yourself, whether I have pushed this very guide, too, to a remote repository with Git? Well, I think you know the answer already.
+
+In the next chapter, I'll tell what you have to do to use Git on your computer.
+
+<br>
+<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Lightning Fast Git Guide</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://vldesign.kapsi.fi/git-guide" property="cc:attributionName" rel="cc:attributionURL">Ville Langén</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
